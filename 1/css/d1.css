@@ -2,6 +2,7 @@
   display: none; }
 
 body {
+  padding: 80px;
   font-family: 'Letter Gothic Std', 'Andale Mono', 'Courier New', 'Lucida Console', 'monospace';
   background-color: #c7c7c7; }
 
@@ -21,7 +22,7 @@ li {
 .container {
   width: 376px;
   height: 610px;
-  margin: 100px auto 0;
+  margin: 0 auto;
   border-radius: 8px;
   text-align: center;
   background-color: #ebebeb;
