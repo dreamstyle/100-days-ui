@@ -28,7 +28,7 @@
                 <span class="price">200 NTD</span>
             </aside>
             <main>
-                <section>
+                <section id="payment-proceeding">
                     <h1>Payment Detail</h1>
                     <img src="img/visa.png" alt="card type" class="card-type">
                     <form>
@@ -59,8 +59,16 @@
                             <label for="save-as-default"></label>
                             <label for="save-as-default">Save as default</label>
                         </section>
-                        <input class="btn-submit hide-text" type="submit" value="Buy">
+                        <input class="hide-text" id="btn-submit" type="submit" value="Buy">
                     </form>
+                </section>
+                <section id="payment-complete" class="payment-complete">
+                    <img src="img/product.png" alt="">
+                    <h1>Congradualation!</h1>
+                    <p>
+                        Your order has has been<br>
+                        successfully processed.
+                    </p>
                 </section>
             </main>
         </div>

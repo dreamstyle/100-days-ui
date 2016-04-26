@@ -1,3 +1,6 @@
+#payment-complete img, #payment-complete h1, #payment-complete p {
+  display: none; }
+
 body {
   padding: 80px;
   font-family: 'Roboto Slab', serif;
@@ -31,31 +34,28 @@ p {
   color: #afafaf; }
 
 .container {
+  position: relative;
   width: 900px;
   margin: 50px auto 0; }
 
 aside {
-  float: left;
-  margin: 100px 0 0 60px; }
+  position: absolute;
+  z-index: -100;
+  top: 100px;
+  left: 100px;
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1); }
 
 main {
-  position: relative;
-  float: right;
+  position: absolute;
+  z-index: 100;
   width: 400px;
   height: 400px;
-  margin: 0 78px 0 0;
+  right: 78px;
   padding: 30px;
   border-radius: 10px;
   background-color: #fafafa;
-  box-shadow: 0 2px 2px 0 rgba(144, 0, 28, 0.24), 0 0 2px 0 rgba(144, 0, 28, 0.12); }
-
-.price {
-  display: block;
-  margin: 10px 0 0 0;
-  text-align: center;
-  color: #1cdef5;
-  font-size: 28px;
-  text-shadow: 0 2px 0 #ee768d; }
+  box-shadow: 0 2px 2px 0 rgba(144, 0, 28, 0.24), 0 0 2px 0 rgba(144, 0, 28, 0.12);
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1); }
 
 h1 {
   position: relative;
@@ -99,6 +99,24 @@ input[type="submit"] {
   box-shadow: 0 2px 2px 0 rgba(144, 0, 28, 0.24), 0 0 2px 0 rgba(144, 0, 28, 0.12); }
   input[type="submit"]:hover {
     background-color: #00D3E5; }
+
+.payment-complete {
+  margin-top: 30px;
+  text-align: center; }
+
+.aside--complete {
+  left: 300px; }
+
+.main--complete {
+  right: 250px; }
+
+.price {
+  display: block;
+  margin: 10px 0 0 0;
+  text-align: center;
+  color: #1cdef5;
+  font-size: 28px;
+  text-shadow: 0 2px 0 #ee768d; }
 
 .card-type {
   position: absolute;
