@@ -24,7 +24,7 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-      
+      <div class="overlay" id="overlay"></div>
       <div class="app-container"> <!-- container -->
         <nav class="nav"> <!-- nav -->
           <a class="nav__logo" href="#">
@@ -53,11 +53,38 @@
               <a href="#" class="link-navbar">Guide for <br>Residents</a>
             </li>
           </ul>
-          <button class="btn-nav-mobile">
+          <button class="btn-nav-mobile" id="btn-nav-mobile">
             <i class="material-icons">menu</i>
           </button>
         </nav> <!-- /nav -->
-
+        <nav class="nav--mobile" id="nav--mobile">
+          <a href="#" class="btn-close-nav" id="btn-close-nav">
+            <i class="material-icons">close</i>
+          </a>
+          <ul class="nav__items--mobile">
+            <li class="nav__item">
+              <a href="#" class="link-navbar link-navbar--mobile">About Taiwan</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="link-navbar link-navbar--mobile">Visas & Immigration</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="link-navbar link-navbar--mobile">Education & Employment</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="link-navbar link-navbar--mobile">Tourism & Culture</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="link-navbar link-navbar--mobile">Economy & Investment</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="link-navbar link-navbar--mobile">Health Care & Emergencies</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="link-navbar link-navbar--mobile">Guide for Residents</a>
+            </li>
+          </ul>
+        </nav>
         <main> <!-- main -->
           <div class="main-container--1">
             <img src="img/flag.png" alt="Country Flag" class="img-flag">

@@ -16,10 +16,7 @@ $font-size-lg: 28px;
 
 body {
 	background-color: #000;
-	background-image: url('../img/bg.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+	background: url('../img/bg.jpg') right top / cover fixed;
 	font-family: $font-family-1;
 }
 
@@ -54,7 +51,18 @@ button {
 	flex-direction: column;
 }
 
-nav {
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -76,12 +84,39 @@ footer {
 	padding: 4px 0;
 }
 
+.nav--mobile {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 200;
+	width: 300px;
+	background-color: rgba(0, 0, 0, 0.8);
+	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.35);
+	overflow: hidden;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		background-color: rgba(0, 0, 0, 0.8);
+		background: url('../img/bg.jpg') right top / cover;
+		filter: blur(20px);
+		margin: -30px;
+	}
+}
+
 .main-container--1 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
-	min-height: 250px;
+	min-height: 300px;
 	margin-bottom: 20px;
 }
 
@@ -89,7 +124,7 @@ footer {
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
-	min-height: 400px;
+	min-height: 450px;
 }
 
 .panel-1 {
@@ -194,6 +229,13 @@ footer {
 	}
 }
 
+.link-navbar--mobile {
+	padding-left:  2px;
+	padding-right: 2px;
+	font-size: 18px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
 .link-footer {
 	padding: 4px 0;
 	border: 2px solid transparent;
@@ -242,6 +284,26 @@ footer {
 .nav__item {
 	display: inline;
 	margin-right: 15px;
+}
+
+
+.nav--mobile {
+	.nav__item {
+		display: block;
+		height: 50px;
+	}
+}
+
+.nav__items--mobile {
+	margin-top: 120px;
+	text-align: left;
+}
+
+.btn-close-nav {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #fff;
 }
 
 .btn-nav-mobile {
@@ -527,6 +589,28 @@ footer {
 }
 
 @media screen and (max-width: 720px) {
+	.nav--mobile {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: auto;
+
+		.nav__item {
+			margin: 0 auto;
+			width: 100%;
+			max-width: 250px;
+		}
+	}
+
+	.nav__items--mobile {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0;
+		height: 100%;
+	}
+
 	.main-container--2 {
 		flex-direction: column;
 		align-items: center;
