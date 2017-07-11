@@ -116,83 +116,78 @@ main section:last-of-type {
   font-size: 25px;
   outline: none;
   border: none;
+  border-radius: 50%;
   background-color: transparent;
   color: #e3e3e3;
   cursor: pointer;
 }
-/* line 95, d4.scss */
+/* line 96, d4.scss */
 .btn:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 100, d4.scss */
+/* line 101, d4.scss */
 .btn-operator {
   font-size: 30px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* line 105, d4.scss */
-.btn-calc {
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* line 110, d4.scss */
+/* line 106, d4.scss */
 .btn-ac {
   font-size: 18px;
 }
 
-/* line 111, d4.scss */
+/* line 107, d4.scss */
 .btn-plus-minus {
   font-size: 25px;
 }
 
-/* line 112, d4.scss */
+/* line 108, d4.scss */
 .btn-percent {
   font-size: 20px;
 }
 
-/* line 113, d4.scss */
+/* line 109, d4.scss */
 .btn-multiply {
   font-size: 30px;
 }
 
-/* line 115, d4.scss */
+/* line 111, d4.scss */
 .placeholder {
   width: 50px;
   height: 50px;
 }
 
 @media screen and (max-width: 600px) {
-  /* line 121, d4.scss */
+  /* line 117, d4.scss */
   body {
     width: auto;
   }
 
-  /* line 125, d4.scss */
+  /* line 121, d4.scss */
   h1 {
     font-size: 24px;
   }
 
-  /* line 129, d4.scss */
+  /* line 125, d4.scss */
   .calculator {
     display: block;
     margin: 0 auto 24px;
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 136, d4.scss */
+  /* line 132, d4.scss */
   body {
     width: auto;
     margin: 0;
   }
 
-  /* line 141, d4.scss */
+  /* line 137, d4.scss */
   h1 {
     display: none;
   }
 
-  /* line 145, d4.scss */
+  /* line 141, d4.scss */
   .calculator {
     display: block;
     margin: 0 auto 50px;
