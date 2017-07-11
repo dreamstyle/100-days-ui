@@ -13,16 +13,30 @@ html {
 
 body {
     background-color: #1c1c1c;
+    text-align: center;
+    width: (320px + 24px) * 4 + 50px;
+}
+
+h1 {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .calculator {
+    display: inline-block;
     width: 320px;
     height: 568px;
-    margin: 0 auto;
+    margin: 0 24px 0 0;
     padding: 0;
-    background-color: #008d93;
     box-shadow: 0 12px 12px 3px rgba(0, 0, 0, 0.5);
 }
+
+.calculator--black { background-color: #3e3e3e;}
+.calculator--green { background-color: #008d93;}
+.calculator--blue  { background-color: #155e9c;}
+.calculator--red   { background-color: #8d3f44;}
 
 header {
     background-color: rgba(0, 0, 0, 0.2);
