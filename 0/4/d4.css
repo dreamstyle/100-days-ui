@@ -161,3 +161,39 @@ main section:last-of-type {
   width: 50px;
   height: 50px;
 }
+
+@media screen and (max-width: 600px) {
+  /* line 120, d4.scss */
+  body {
+    width: auto;
+  }
+
+  /* line 124, d4.scss */
+  h1 {
+    font-size: 24px;
+  }
+
+  /* line 128, d4.scss */
+  .calculator {
+    display: block;
+    margin: 0 auto 24px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 135, d4.scss */
+  body {
+    width: auto;
+    margin: 0;
+  }
+
+  /* line 140, d4.scss */
+  h1 {
+    display: none;
+  }
+
+  /* line 144, d4.scss */
+  .calculator {
+    display: block;
+    margin: 0 auto 50px;
+  }
+}
