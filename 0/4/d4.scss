@@ -1,0 +1,103 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+    font-family: 'Rubik', Arial, sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background-color: #1c1c1c;
+}
+
+.calculator {
+    width: 320px;
+    height: 568px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #008d93;
+    box-shadow: 0 12px 12px 3px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 70px 45px 30px 45px;
+}
+
+.buffer {
+    margin-bottom: 10px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.99);
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    font-size: 34px;
+}
+
+.result__equal {
+    color: #ffffff;
+}
+
+.result__result {
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 0.99);
+}
+
+main {
+    padding: 25px;
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #e3e3e3;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.btn-operator {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-calc {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-ac         { font-size: 18px;}
+.btn-plus-minus { font-size: 25px;}
+.btn-percent    { font-size: 20px;}
+.btn-multiply   { font-size: 30px;}
+
+.placeholder {
+    width: 50px;
+    height: 50px;
+}

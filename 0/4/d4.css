@@ -1,0 +1,133 @@
+/* line 1, d4.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 5, d4.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 9, d4.scss */
+* {
+  font-family: 'Rubik', Arial, sans-serif;
+  font-weight: 300;
+}
+
+/* line 14, d4.scss */
+body {
+  background-color: #1c1c1c;
+}
+
+/* line 18, d4.scss */
+.calculator {
+  width: 320px;
+  height: 568px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #008d93;
+  box-shadow: 0 12px 12px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* line 27, d4.scss */
+header {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 70px 45px 30px 45px;
+}
+
+/* line 33, d4.scss */
+.buffer {
+  margin-bottom: 10px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.99);
+}
+
+/* line 41, d4.scss */
+.result {
+  display: flex;
+  justify-content: space-between;
+  font-size: 34px;
+}
+
+/* line 47, d4.scss */
+.result__equal {
+  color: #ffffff;
+}
+
+/* line 51, d4.scss */
+.result__result {
+  margin-right: 5px;
+  color: rgba(255, 255, 255, 0.99);
+}
+
+/* line 56, d4.scss */
+main {
+  padding: 25px;
+}
+/* line 59, d4.scss */
+main section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+/* line 64, d4.scss */
+main section:last-of-type {
+  margin-bottom: 0;
+}
+
+/* line 70, d4.scss */
+.btn {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #e3e3e3;
+  cursor: pointer;
+}
+/* line 80, d4.scss */
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* line 85, d4.scss */
+.btn-operator {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* line 90, d4.scss */
+.btn-calc {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* line 95, d4.scss */
+.btn-ac {
+  font-size: 18px;
+}
+
+/* line 96, d4.scss */
+.btn-plus-minus {
+  font-size: 25px;
+}
+
+/* line 97, d4.scss */
+.btn-percent {
+  font-size: 20px;
+}
+
+/* line 98, d4.scss */
+.btn-multiply {
+  font-size: 30px;
+}
+
+/* line 100, d4.scss */
+.placeholder {
+  width: 50px;
+  height: 50px;
+}
