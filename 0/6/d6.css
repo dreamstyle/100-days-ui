@@ -1,0 +1,200 @@
+/* line 8, d6.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 12, d6.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 16, d6.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 21, d6.scss */
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+/* line 26, d6.scss */
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 34, d6.scss */
+div.user-profile {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 40, d6.scss */
+header {
+  height: 90vw;
+  padding: 18px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3) 71%, rgba(0, 0, 0, 0.5)), url("img/img-profile-pic.jpg") no-repeat;
+  background-size: cover;
+}
+
+/* line 52, d6.scss */
+main {
+  margin: 0;
+  padding: 16px;
+}
+
+/* line 57, d6.scss */
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 62, d6.scss */
+.name {
+  margin: 0 0 4px 0;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 3.5px;
+  color: #fff;
+}
+
+/* line 70, d6.scss */
+.description {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* line 78, d6.scss */
+.tab-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 83, d6.scss */
+.tab-item {
+  flex: 1;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.56);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 93, d6.scss */
+.tab-item strong {
+  font-size: 18px;
+}
+/* line 96, d6.scss */
+.tab-item strong::after {
+  content: "\A";
+  white-space: pre;
+}
+
+/* line 103, d6.scss */
+.tab-item:hover,
+.tab-item--active {
+  border-bottom: 4px solid #ffde2a;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+}
+
+/* line 110, d6.scss */
+.content {
+  margin-top: 24px;
+}
+
+/* line 117, d6.scss */
+.post-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+/* line 124, d6.scss */
+.post-item:last-of-type {
+  border-bottom: none;
+}
+
+/* line 129, d6.scss */
+.post {
+  margin: 0 0 8px 0;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* line 137, d6.scss */
+.post-time {
+  margin-bottom: 16px;
+  font-size: 12px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.3);
+}
+/* line 143, d6.scss */
+.post-time .date {
+  margin-right: 16px;
+}
+
+/* line 148, d6.scss */
+.btn-follow {
+  border: 0;
+  padding: 12px 40px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 22px;
+  background-color: #ffde2a;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  transition: all .3s ease-out;
+}
+/* line 161, d6.scss */
+.btn-follow:hover, .btn-follow:focus, .btn-follow:active {
+  background-color: #fdcd14;
+  color: rgba(0, 0, 0, 0.3);
+  box-shadow: none;
+}
+
+/* line 168, d6.scss */
+.btn-like {
+  padding: 6px 30px 6px 60px;
+  border-radius: 100px;
+  background-color: #fff;
+  background-image: url("img/ic-like-normal.svg");
+  background-repeat: no-repeat;
+  background-position: left 30px top 50%;
+  border: solid 2px #ffde2a;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color .3s ease-out;
+}
+/* line 182, d6.scss */
+.btn-like:hover, .btn-like:focus, .btn-like:active {
+  background-color: #ffde2a;
+  background-image: url("img/ic-like-active.svg");
+}
+
+/* line 188, d6.scss */
+.hide-text {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
