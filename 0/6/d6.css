@@ -165,13 +165,13 @@ nav {
   transition: all .3s ease-out;
 }
 /* line 161, d6.scss */
-.btn-follow:hover, .btn-follow:focus, .btn-follow:active {
+.btn-follow:hover, .btn-follow:focus, .btn-follow:active, .btn-follow.following {
   background-color: #fdcd14;
   color: rgba(0, 0, 0, 0.3);
   box-shadow: none;
 }
 
-/* line 168, d6.scss */
+/* line 169, d6.scss */
 .btn-like {
   padding: 6px 30px 6px 60px;
   border-radius: 100px;
@@ -186,13 +186,13 @@ nav {
   text-align: center;
   transition: background-color .3s ease-out;
 }
-/* line 182, d6.scss */
-.btn-like:hover, .btn-like:focus, .btn-like:active {
+/* line 183, d6.scss */
+.btn-like:hover, .btn-like:focus, .btn-like:active, .btn-like.liked {
   background-color: #ffde2a;
   background-image: url("img/ic-like-active.svg");
 }
 
-/* line 188, d6.scss */
+/* line 190, d6.scss */
 .hide-text {
   position: absolute;
   overflow: hidden;
