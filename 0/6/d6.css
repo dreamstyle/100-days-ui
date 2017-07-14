@@ -182,7 +182,7 @@ nav {
   transition: all .3s ease-out;
 }
 /* line 177, d6.scss */
-.btn-follow:hover, .btn-follow:focus, .btn-follow:active, .btn-follow.following {
+.btn-follow:hover, .btn-follow.following {
   background-color: #fdcd14;
   color: rgba(0, 0, 0, 0.3);
   box-shadow: none;
@@ -204,7 +204,7 @@ nav {
   transition: background-color .3s ease-out;
 }
 /* line 199, d6.scss */
-.btn-like:hover, .btn-like:focus, .btn-like:active, .btn-like.liked {
+.btn-like:hover, .btn-like.liked {
   background-color: #ffde2a;
   background-image: url("img/ic-like-active.svg");
 }

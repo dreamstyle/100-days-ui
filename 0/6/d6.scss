@@ -174,7 +174,7 @@ nav {
 	text-align: center;
 	transition: all .3s ease-out;
 
-	&:hover, &:focus, &:active,
+	&:hover,
 	&.following {
 		background-color: #fdcd14;
 		color: $font-color-neutral;
@@ -196,7 +196,7 @@ nav {
 	text-align: center;
 	transition: background-color .3s ease-out;
 
-	&:hover, &:focus, &:active,
+	&:hover,
 	&.liked {
 		background-color: $color-primary;
 		background-image: url('img/ic-like-active.svg');
