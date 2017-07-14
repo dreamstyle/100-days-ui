@@ -28,13 +28,14 @@ ol, ul {
 }
 
 /* line 34, d6.scss */
-div.user-profile {
+.user-profile {
   width: 100%;
   margin: 0;
   padding: 0;
+  background-color: #fff;
 }
 
-/* line 40, d6.scss */
+/* line 41, d6.scss */
 header {
   height: 90vw;
   padding: 18px 32px;
@@ -46,19 +47,35 @@ header {
   background-size: cover;
 }
 
-/* line 52, d6.scss */
+/* line 53, d6.scss */
 main {
   margin: 0;
   padding: 16px;
 }
 
-/* line 57, d6.scss */
+/* line 58, d6.scss */
 nav {
   margin: 0;
   padding: 0;
 }
 
-/* line 62, d6.scss */
+/* line 63, d6.scss */
+.showcase-title {
+  display: none;
+}
+/* line 66, d6.scss */
+.showcase-title h1, .showcase-title h2 {
+  margin: 0;
+  font-size: 39px;
+  font-weight: 100;
+  color: #fff;
+}
+/* line 73, d6.scss */
+.showcase-title h1 {
+  font-weight: 400;
+}
+
+/* line 78, d6.scss */
 .name {
   margin: 0 0 4px 0;
   font-size: 22px;
@@ -67,7 +84,7 @@ nav {
   color: #fff;
 }
 
-/* line 70, d6.scss */
+/* line 86, d6.scss */
 .description {
   margin: 0 0 16px 0;
   font-size: 16px;
@@ -76,13 +93,13 @@ nav {
   color: rgba(255, 255, 255, 0.87);
 }
 
-/* line 78, d6.scss */
+/* line 94, d6.scss */
 .tab-list {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 83, d6.scss */
+/* line 99, d6.scss */
 .tab-item {
   flex: 1;
   padding-bottom: 8px;
@@ -93,17 +110,17 @@ nav {
   text-align: center;
   cursor: pointer;
 }
-/* line 93, d6.scss */
+/* line 109, d6.scss */
 .tab-item strong {
   font-size: 18px;
 }
-/* line 96, d6.scss */
+/* line 112, d6.scss */
 .tab-item strong::after {
   content: "\A";
   white-space: pre;
 }
 
-/* line 103, d6.scss */
+/* line 119, d6.scss */
 .tab-item:hover,
 .tab-item--active {
   border-bottom: 4px solid #ffde2a;
@@ -111,12 +128,12 @@ nav {
   font-weight: 500;
 }
 
-/* line 110, d6.scss */
+/* line 126, d6.scss */
 .content {
   margin-top: 24px;
 }
 
-/* line 117, d6.scss */
+/* line 133, d6.scss */
 .post-item {
   display: flex;
   flex-direction: column;
@@ -124,12 +141,12 @@ nav {
   padding: 16px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
-/* line 124, d6.scss */
+/* line 140, d6.scss */
 .post-item:last-of-type {
   border-bottom: none;
 }
 
-/* line 129, d6.scss */
+/* line 145, d6.scss */
 .post {
   margin: 0 0 8px 0;
   font-size: 15px;
@@ -138,19 +155,19 @@ nav {
   color: rgba(0, 0, 0, 0.87);
 }
 
-/* line 137, d6.scss */
+/* line 153, d6.scss */
 .post-time {
   margin-bottom: 16px;
   font-size: 12px;
   text-align: center;
   color: rgba(0, 0, 0, 0.3);
 }
-/* line 143, d6.scss */
+/* line 159, d6.scss */
 .post-time .date {
   margin-right: 16px;
 }
 
-/* line 148, d6.scss */
+/* line 164, d6.scss */
 .btn-follow {
   border: 0;
   padding: 12px 40px;
@@ -164,14 +181,14 @@ nav {
   text-align: center;
   transition: all .3s ease-out;
 }
-/* line 161, d6.scss */
+/* line 177, d6.scss */
 .btn-follow:hover, .btn-follow:focus, .btn-follow:active, .btn-follow.following {
   background-color: #fdcd14;
   color: rgba(0, 0, 0, 0.3);
   box-shadow: none;
 }
 
-/* line 169, d6.scss */
+/* line 185, d6.scss */
 .btn-like {
   padding: 6px 30px 6px 60px;
   border-radius: 100px;
@@ -186,15 +203,49 @@ nav {
   text-align: center;
   transition: background-color .3s ease-out;
 }
-/* line 183, d6.scss */
+/* line 199, d6.scss */
 .btn-like:hover, .btn-like:focus, .btn-like:active, .btn-like.liked {
   background-color: #ffde2a;
   background-image: url("img/ic-like-active.svg");
 }
 
-/* line 190, d6.scss */
+/* line 206, d6.scss */
 .hide-text {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
+}
+
+@media screen and (min-width: 640px) {
+  /* line 213, d6.scss */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    height: 100vh;
+    padding: 80px;
+    background: radial-gradient(circle at 100% 100%, #ff7909, #ff9d0c 28%, #ffbd0e 55%, #ffde2a) no-repeat;
+    overflow-y: hidden;
+  }
+
+  /* line 224, d6.scss */
+  .showcase-title {
+    display: block;
+    margin-right: 120px;
+  }
+
+  /* line 229, d6.scss */
+  .user-profile {
+    width: 320px;
+    min-width: 320px;
+    height: 568px;
+    overflow: auto;
+    box-shadow: 0 8px 13px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  /* line 238, d6.scss */
+  header {
+    height: 320px;
+  }
 }
