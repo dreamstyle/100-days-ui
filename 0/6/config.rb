@@ -2,7 +2,7 @@
 css_dir = "" # by Fire.app 
 sass_dir = "" # by Fire.app 
 images_dir = "img" # by Fire.app 
-javascripts_dir = "js" # by Fire.app 
+javascripts_dir = "" # by Fire.app 
 fireapp_coffeescripts_dir = "coffeescripts" # by Fire.app 
 fireapp_livescripts_dir = "livescripts" # by Fire.app 
 fireapp_minifyjs_on_build = false # by Fire.app 
