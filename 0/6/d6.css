@@ -1,33 +1,38 @@
 /* line 8, d6.scss */
+* {
+  font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+}
+
+/* line 12, d6.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 12, d6.scss */
+/* line 16, d6.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 16, d6.scss */
+/* line 20, d6.scss */
 body {
   margin: 0;
   padding: 0;
 }
 
-/* line 21, d6.scss */
+/* line 25, d6.scss */
 button {
   outline: none;
   cursor: pointer;
 }
 
-/* line 26, d6.scss */
+/* line 30, d6.scss */
 ol, ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-/* line 34, d6.scss */
+/* line 38, d6.scss */
 .user-profile {
   width: 100%;
   margin: 0;
@@ -35,7 +40,7 @@ ol, ul {
   background-color: #fff;
 }
 
-/* line 41, d6.scss */
+/* line 45, d6.scss */
 header {
   height: 90vw;
   padding: 18px 32px;
@@ -47,59 +52,59 @@ header {
   background-size: cover;
 }
 
-/* line 53, d6.scss */
+/* line 57, d6.scss */
 main {
   margin: 0;
   padding: 16px;
 }
 
-/* line 58, d6.scss */
+/* line 62, d6.scss */
 nav {
   margin: 0;
   padding: 0;
 }
 
-/* line 63, d6.scss */
+/* line 67, d6.scss */
 .showcase-title {
   display: none;
 }
-/* line 66, d6.scss */
+/* line 70, d6.scss */
 .showcase-title h1, .showcase-title h2 {
   margin: 0;
   font-size: 39px;
   font-weight: 100;
   color: #fff;
 }
-/* line 73, d6.scss */
+/* line 77, d6.scss */
 .showcase-title h1 {
   font-weight: 400;
 }
 
-/* line 78, d6.scss */
+/* line 82, d6.scss */
 .name {
-  margin: 0 0 4px 0;
-  font-size: 22px;
-  font-weight: 400;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
   letter-spacing: 3.5px;
   color: #fff;
 }
 
-/* line 86, d6.scss */
+/* line 90, d6.scss */
 .description {
   margin: 0 0 16px 0;
   font-size: 16px;
   font-weight: 300;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: rgba(255, 255, 255, 0.87);
 }
 
-/* line 94, d6.scss */
+/* line 98, d6.scss */
 .tab-list {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 99, d6.scss */
+/* line 103, d6.scss */
 .tab-item {
   flex: 1;
   padding-bottom: 8px;
@@ -110,17 +115,17 @@ nav {
   text-align: center;
   cursor: pointer;
 }
-/* line 109, d6.scss */
+/* line 113, d6.scss */
 .tab-item strong {
   font-size: 18px;
 }
-/* line 112, d6.scss */
+/* line 116, d6.scss */
 .tab-item strong::after {
   content: "\A";
   white-space: pre;
 }
 
-/* line 119, d6.scss */
+/* line 123, d6.scss */
 .tab-item:hover,
 .tab-item--active {
   border-bottom: 4px solid #ffde2a;
@@ -128,12 +133,12 @@ nav {
   font-weight: 500;
 }
 
-/* line 126, d6.scss */
+/* line 130, d6.scss */
 .content {
   margin-top: 24px;
 }
 
-/* line 133, d6.scss */
+/* line 137, d6.scss */
 .post-item {
   display: flex;
   flex-direction: column;
@@ -141,12 +146,12 @@ nav {
   padding: 16px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
-/* line 140, d6.scss */
+/* line 144, d6.scss */
 .post-item:last-of-type {
   border-bottom: none;
 }
 
-/* line 145, d6.scss */
+/* line 149, d6.scss */
 .post {
   margin: 0 0 8px 0;
   font-size: 15px;
@@ -155,19 +160,19 @@ nav {
   color: rgba(0, 0, 0, 0.87);
 }
 
-/* line 153, d6.scss */
+/* line 157, d6.scss */
 .post-time {
   margin-bottom: 16px;
   font-size: 12px;
   text-align: center;
   color: rgba(0, 0, 0, 0.3);
 }
-/* line 159, d6.scss */
+/* line 163, d6.scss */
 .post-time .date {
   margin-right: 16px;
 }
 
-/* line 164, d6.scss */
+/* line 168, d6.scss */
 .btn-follow {
   border: 0;
   padding: 12px 40px;
@@ -181,14 +186,14 @@ nav {
   text-align: center;
   transition: all .3s ease-out;
 }
-/* line 177, d6.scss */
+/* line 181, d6.scss */
 .btn-follow:hover, .btn-follow.following {
   background-color: #fdcd14;
   color: rgba(0, 0, 0, 0.3);
   box-shadow: none;
 }
 
-/* line 185, d6.scss */
+/* line 189, d6.scss */
 .btn-like {
   padding: 6px 30px 6px 60px;
   border-radius: 100px;
@@ -203,39 +208,43 @@ nav {
   text-align: center;
   transition: background-color .3s ease-out;
 }
-/* line 199, d6.scss */
+/* line 203, d6.scss */
 .btn-like:hover, .btn-like.liked {
   background-color: #ffde2a;
   background-image: url("img/ic-like-active.svg");
 }
 
-/* line 206, d6.scss */
+/* line 210, d6.scss */
 .hide-text {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
 
-/* line 215, d6.scss */
+/* line 218, d6.scss */
+.user-profile--2 {
+  display: none;
+}
+/* line 221, d6.scss */
 .user-profile--2 header {
-  height: 90vw;
+  height: 120vw;
   padding: 50px 0 0;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) 85%, rgba(0, 0, 0, 0.7)), url("img/img-cover-photo.jpg") no-repeat;
 }
-/* line 224, d6.scss */
+/* line 230, d6.scss */
 .user-profile--2 nav {
   width: 100%;
 }
-/* line 228, d6.scss */
+/* line 234, d6.scss */
 .user-profile--2 .profile-info {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-/* line 235, d6.scss */
+/* line 241, d6.scss */
 .user-profile--2 .profile-pic {
   width: 100px;
   height: 100px;
@@ -244,18 +253,19 @@ nav {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5);
   order: -1;
 }
-/* line 244, d6.scss */
+/* line 250, d6.scss */
 .user-profile--2 .description {
   color: rgba(255, 255, 255, 0.7);
 }
-/* line 248, d6.scss */
+/* line 254, d6.scss */
 .user-profile--2 .tab-item {
   position: relative;
   padding-bottom: 28px;
   color: rgba(255, 255, 255, 0.7);
   border: none;
+  letter-spacing: 0.5px;
 }
-/* line 254, d6.scss */
+/* line 261, d6.scss */
 .user-profile--2 .tab-item::after {
   content: '';
   position: absolute;
@@ -266,13 +276,13 @@ nav {
   border-radius: 50%;
   background-color: #ffde2a;
 }
-/* line 266, d6.scss */
+/* line 273, d6.scss */
 .user-profile--2 .tab-item:hover,
 .user-profile--2 .tab-item--active {
   color: #fff;
   font-weight: 500;
 }
-/* line 271, d6.scss */
+/* line 278, d6.scss */
 .user-profile--2 .tab-item:hover::after,
 .user-profile--2 .tab-item--active::after {
   bottom: 0;
@@ -285,13 +295,17 @@ nav {
   background-color: transparent;
   border-radius: 0;
 }
-/* line 284, d6.scss */
+/* line 291, d6.scss */
 .user-profile--2 .content {
   margin-top: 0;
 }
+/* line 295, d6.scss */
+.user-profile--2 .post {
+  color: rgba(0, 0, 0, 0.7);
+}
 
 @media screen and (min-width: 640px) {
-  /* line 290, d6.scss */
+  /* line 301, d6.scss */
   body {
     display: flex;
     justify-content: center;
@@ -303,14 +317,14 @@ nav {
     overflow-y: hidden;
   }
 
-  /* line 301, d6.scss */
+  /* line 312, d6.scss */
   .showcase-title {
     display: block;
     margin-top: -200px;
     margin-right: 100px;
   }
 
-  /* line 307, d6.scss */
+  /* line 318, d6.scss */
   .user-profile {
     width: 320px;
     min-width: 320px;
@@ -319,16 +333,17 @@ nav {
     box-shadow: 0 8px 13px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 
-  /* line 316, d6.scss */
+  /* line 327, d6.scss */
   header {
     height: 320px;
   }
 
-  /* line 320, d6.scss */
+  /* line 331, d6.scss */
   .user-profile--2 {
+    display: block;
     margin-right: 60px;
   }
-  /* line 323, d6.scss */
+  /* line 335, d6.scss */
   .user-profile--2 header {
     height: 392px;
   }
